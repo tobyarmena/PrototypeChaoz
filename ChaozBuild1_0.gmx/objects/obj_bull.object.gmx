@@ -37,6 +37,8 @@ attacked = false;
 state = 1;
 value=6;
 
+event_inherited()
+
 </string>
           </argument>
         </arguments>

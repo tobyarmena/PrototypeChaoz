@@ -36,6 +36,8 @@ action = 2;
 attacked = false;
 charging = false;
 stamina = 60;
+
+event_inherited()
 </string>
           </argument>
         </arguments>

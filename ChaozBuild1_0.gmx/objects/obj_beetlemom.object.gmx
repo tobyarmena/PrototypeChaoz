@@ -40,6 +40,8 @@ hiveplace = true;
 move=true
 target = instance_create(x,y,obj_target)
 value=9;
+
+event_inherited()
 </string>
           </argument>
         </arguments>

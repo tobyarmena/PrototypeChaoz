@@ -36,6 +36,8 @@ action = 2;
 explode = false;
 attacked = false;
 value=0;
+
+event_inherited()
 </string>
           </argument>
         </arguments>
