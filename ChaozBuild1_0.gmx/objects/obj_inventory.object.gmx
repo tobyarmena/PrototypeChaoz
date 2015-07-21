@@ -170,12 +170,22 @@ global.items[8,4] = spr_scythe_pu
 global.items[8,5] = scr_scythe
 
 //Dash legs
-global.items[9,0] = "Agility"  
+global.items[9,0] = "Agility"   
 global.items[9,1] = 4             
 global.items[9,2] = spr_dash_legs
 global.items[9,3] = ""           
 global.items[9,4] = spr_dash_pu
 global.items[9,5] = scr_dash
+
+
+//Grenade Launcher
+global.items[10,0] = "Gas Gun"  
+global.items[10,1] = 1            
+global.items[10,2] = spr_gas_arm
+global.items[10,3] = ""           
+global.items[10,4] = spr_gas_pu
+global.items[10,5] = scr_gas
+
 
 </string>
           </argument>
