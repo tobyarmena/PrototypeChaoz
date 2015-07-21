@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 60
+            <string>touch = 0
+alarm[2] = 640
 </string>
           </argument>
         </arguments>
@@ -73,7 +74,7 @@
             <kind>1</kind>
             <string>part_particles_create(global.gas_sys,x,y,global.gas_pt,20)
 
-alarm[1] = 10
+alarm[1] = 5
 </string>
           </argument>
         </arguments>
@@ -96,33 +97,11 @@ alarm[1] = 10
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>physics_apply_torque(9000)
+            <string>if touch = 1
+physics_apply_torque(25000)
 
-alarm[1] = 10
-alarm[2] = 360
+
 </string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string></string>
           </argument>
         </arguments>
       </action>
@@ -144,7 +123,40 @@ alarm[2] = 360
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//gnsk//fasmfkaf
+            <string>if touch = 0
+{
+alarm[0] = 20
+alarm[1] = 5
+}
+touch += 1
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="par_enemies">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if touch = 0
+{
+alarm[0] = 20
+alarm[1] = 5
+}
+touch += 1
 </string>
           </argument>
         </arguments>
@@ -154,12 +166,12 @@ alarm[2] = 360
   <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>
-  <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
+  <PhysicsObjectDensity>1.5</PhysicsObjectDensity>
   <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
   <PhysicsObjectLinearDamping>0.100000001490116</PhysicsObjectLinearDamping>
   <PhysicsObjectAngularDamping>0.100000001490116</PhysicsObjectAngularDamping>
-  <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
+  <PhysicsObjectFriction>1</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints>
