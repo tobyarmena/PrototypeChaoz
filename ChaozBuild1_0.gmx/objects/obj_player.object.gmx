@@ -68,6 +68,9 @@ global.spawnpoint = spawnpoint1
 
 global.firstTouch = false
 
+originalmass=phy_mass
+originaldamp=phy_linear_damping;
+
 
 </string>
           </argument>

@@ -79,6 +79,7 @@ candash=0
             <kind>1</kind>
             <string>script_execute(global.inventory[29,5])
 
+
 if global.inventory[29,2]==spr_empty
     {
     sprite_index=spr_normal_legs
